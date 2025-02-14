@@ -9,7 +9,6 @@ ${add_task_button}         xpath=//*[@resource-id="createTask"]
 
 *** Keywords ***
 Create a new task
-
     [Arguments]            ${task_name}
 
     Wait Until Element Is Visible        ${new_task_input}        5

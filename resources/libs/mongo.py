@@ -1,9 +1,15 @@
 from robot.api.deco import keyword
 from pymongo import MongoClient
+from dotenv import load_dotenv
+import os
 
-client = MongoClient('mongodb+srv://qax:xperience@cluster0.v7n5e.mongodb.net/markX?retryWrites=true&w=majority&appName=Cluster0')
+load_dotenv()
 
-db = client['markX']
+MONGO_URI = os.getenv('MONGO_URI')
+DB_NAME = os.getenv('DB_NAME')
+
+client = MongoClient(MONGO_URI)
+db = client[DB_NAME]
 
 @keyword('Remove task from database')
 def remove_task_by_name(task_name):
