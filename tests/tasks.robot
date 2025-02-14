@@ -9,9 +9,10 @@ Test Teardown           Finish session
 *** Test Cases ***
 Deve poder cadastrar uma nova tarefa
 
+    ${task}        Set Variable        Estudar testes com Appium e Robot
     Do login
 
-    ${task}        Set Variable        Estudar testes com appium e robot
+    Create a new task            ${task}
+    Should have task             ${task}
 
-    Create a new task        ${task}
-    Should have task         ${task}
+    Remove task from database    ${task}
