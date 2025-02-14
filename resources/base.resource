@@ -1,7 +1,8 @@
 *** Settings ***
-Documentation        Tudo deve começar nesse arquivo
+Documentation            Tudo deve começar nesse arquivo
 
-Library        AppiumLibrary
+Library                  AppiumLibrary
+Resource                 screens/login.resource
 
 *** Keywords ***
 Start session
