@@ -4,7 +4,7 @@ Documentation            Login screen elements and actions
 Library                  AppiumLibrary
 
 *** Variables ***
-${API_IP}                 172.18.176.1
+${API_IP}                 192.168.18.4
 
 *** Keywords ***
 Do login
