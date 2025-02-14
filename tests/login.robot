@@ -21,4 +21,4 @@ Deve logar com sucesso
 
     Wait Until Page Contains        Minhas tarefas        
 
-    Sleep    10
+    Close Application 
